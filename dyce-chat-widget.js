@@ -19,7 +19,9 @@
 
   // ── Styles (injected into Shadow DOM) ──────────────────────────────
   var CSS = [
-    ":host { all: initial; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }",
+    "@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');",
+
+    ":host { all: initial; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }",
 
     "*, *::before, *::after {",
     "  box-sizing: border-box;",
@@ -81,10 +83,10 @@
     "  display: flex;",
     "  align-items: center;",
     "  justify-content: center;",
-    "  padding: 16px;",
+    "  padding: 16px 16px 14px;",
     "  position: relative;",
-    "  background: #ffffff;",
-    "  border-bottom: 1px solid #e8ddf0;",
+    "  background: #1a1a2e;",
+    "  border-bottom: none;",
     "}",
     ".dyce-logo { height: 36px; width: auto; }",
     ".dyce-close {",
@@ -96,7 +98,7 @@
     "  border: none;",
     "  cursor: pointer;",
     "  font-size: 22px;",
-    "  color: #666;",
+    "  color: rgba(255,255,255,0.7);",
     "  width: 32px;",
     "  height: 32px;",
     "  display: flex;",
@@ -105,15 +107,16 @@
     "  border-radius: 50%;",
     "  font-family: inherit;",
     "}",
-    ".dyce-close:hover { background: #f0e6f6; color: #333; }",
+    ".dyce-close:hover { background: rgba(255,255,255,0.1); color: #ffffff; }",
 
     /* Title bar */
     ".dyce-title {",
     "  padding: 10px 16px;",
-    "  font-size: 14px;",
+    "  font-size: 13px;",
     "  font-weight: 600;",
     "  color: #2d2d3d;",
     "  background: #f0e6f6;",
+    "  letter-spacing: 0.2px;",
     "}",
 
     /* Messages area */
