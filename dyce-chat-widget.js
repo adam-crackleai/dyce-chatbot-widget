@@ -267,11 +267,12 @@
   toggle.style.pointerEvents = "auto";
   toggle.innerHTML = [
     '<svg class="dyce-toggle-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">',
-    '  <path d="M9 14a7 7 0 0 1 7-7h0a7 7 0 0 1 7 7v2a5 5 0 0 1-5 5h-2l-2.5 2.5V21H13a4 4 0 0 1-4-4v-3z" fill="#d4d4d4"/>',
-    '  <circle cx="14.5" cy="15" r="1.3" fill="#444"/>',
-    '  <circle cx="17.5" cy="15" r="1.3" fill="#444"/>',
-    '  <path d="M13 6.5a3.2 3.2 0 0 1 6 0" stroke="#de00b9" stroke-width="2" stroke-linecap="round" fill="none"/>',
-    '  <path d="M11 4.2a5.5 5.5 0 0 1 10 0" stroke="#de00b9" stroke-width="2" stroke-linecap="round" fill="none"/>',
+    '  <rect x="7" y="12" width="18" height="11" rx="5.5" fill="#d0d0d0"/>',
+    '  <path d="M14 23l-1.5 3.5L17 23" fill="#d0d0d0"/>',
+    '  <circle cx="13.5" cy="17.5" r="1.3" fill="#555"/>',
+    '  <circle cx="18.5" cy="17.5" r="1.3" fill="#555"/>',
+    '  <path d="M13 8.5c.8-1.5 1.8-2.2 3-2.2s2.2.7 3 2.2" stroke="#de00b9" stroke-width="2" stroke-linecap="round" fill="none"/>',
+    '  <path d="M10.8 6c1.2-2 2.8-3 5.2-3s4 1 5.2 3" stroke="#de00b9" stroke-width="2" stroke-linecap="round" fill="none"/>',
     '</svg>',
     '<span class="dyce-toggle-label">CHAT</span>',
     '<span class="dyce-pulse-ring"></span>'
