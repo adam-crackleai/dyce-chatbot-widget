@@ -37,6 +37,20 @@
     "  line-height: 1.4;",
     "}",
 
+    /* Pulse ring animation */
+    "@keyframes dyce-pulse {",
+    "  0% { transform: scale(1); opacity: 0.4; }",
+    "  100% { transform: scale(1.5); opacity: 0; }",
+    "}",
+    ".dyce-pulse-ring {",
+    "  position: absolute;",
+    "  inset: 0;",
+    "  border-radius: 16px;",
+    "  background: rgba(222, 0, 185, 0.25);",
+    "  animation: dyce-pulse 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;",
+    "  pointer-events: none;",
+    "}",
+
     /* Toggle button — minimised state */
     ".dyce-toggle {",
     "  position: fixed;",
@@ -45,7 +59,7 @@
     "  width: 72px;",
     "  height: 72px;",
     "  background: #ffffff;",
-    "  border: none;",
+    "  border: 1px solid rgba(222, 0, 185, 0.15);",
     "  border-radius: 16px;",
     "  cursor: pointer;",
     "  display: flex;",
@@ -53,11 +67,11 @@
     "  align-items: center;",
     "  justify-content: center;",
     "  gap: 4px;",
-    "  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);",
+    "  box-shadow: 0 4px 20px rgba(222, 0, 185, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);",
     "  z-index: 99998;",
-    "  transition: transform 0.2s ease;",
+    "  transition: transform 0.2s ease, box-shadow 0.2s ease;",
     "}",
-    ".dyce-toggle:hover { transform: scale(1.05); }",
+    ".dyce-toggle:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(222, 0, 185, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1); }",
     ".dyce-toggle-icon { width: 32px; height: 32px; }",
     ".dyce-toggle-label {",
     "  font-size: 11px;",
@@ -261,9 +275,12 @@
     '  <path d="M14 7.5c0-1 .7-2 2-2s2 1 2 2" stroke="#de00b9" stroke-width="1.4" stroke-linecap="round" fill="none"/>',
     '  <path d="M12.5 6c0-1.5 1.2-3 3.5-3s3.5 1.5 3.5 3" stroke="#de00b9" stroke-width="1.4" stroke-linecap="round" fill="none"/>',
     '</svg>',
-    '<span class="dyce-toggle-label">CHAT</span>'
+    '<span class="dyce-toggle-label">CHAT</span>',
+    '<span class="dyce-pulse-ring"></span>'
   ].join("");
   shadow.appendChild(toggle);
+
+  var pulseRing = shadow.querySelector(".dyce-pulse-ring");
 
   // Chat panel
   var panel = document.createElement("div");
