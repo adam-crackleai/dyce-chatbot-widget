@@ -17,10 +17,16 @@
     return "dyce-" + Date.now() + "-" + Math.random().toString(36).substring(2, 11);
   }
 
+  // ── Load Poppins font (must be at document level for Shadow DOM access)
+  if (!document.querySelector('link[href*="Poppins"]')) {
+    var fontLink = document.createElement("link");
+    fontLink.rel = "stylesheet";
+    fontLink.href = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap";
+    document.head.appendChild(fontLink);
+  }
+
   // ── Styles (injected into Shadow DOM) ──────────────────────────────
   var CSS = [
-    "@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');",
-
     ":host { all: initial; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }",
 
     "*, *::before, *::after {",
