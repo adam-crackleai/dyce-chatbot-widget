@@ -266,14 +266,13 @@
   toggle.setAttribute("aria-label", "Open chat");
   toggle.style.pointerEvents = "auto";
   toggle.innerHTML = [
-    '<svg class="dyce-toggle-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">',
-    '  <path d="M6 10C6 7.79 7.79 6 10 6h12c2.21 0 4 1.79 4 4v8c0 2.21-1.79 4-4 4h-3l-4 4v-4h-5c-2.21 0-4-1.79-4-4v-8z" fill="#de00b9" opacity="0.15"/>',
-    '  <path d="M10 6h12c2.21 0 4 1.79 4 4v8c0 2.21-1.79 4-4 4h-3l-4 4v-4h-5c-2.21 0-4-1.79-4-4v-8c0-2.21 1.79-4 4-4z" stroke="#de00b9" stroke-width="1.8" fill="none"/>',
-    '  <circle cx="12" cy="14" r="1.2" fill="#de00b9"/>',
-    '  <circle cx="16" cy="14" r="1.2" fill="#de00b9"/>',
-    '  <circle cx="20" cy="14" r="1.2" fill="#de00b9"/>',
-    '  <path d="M14 7.5c0-1 .7-2 2-2s2 1 2 2" stroke="#de00b9" stroke-width="1.4" stroke-linecap="round" fill="none"/>',
-    '  <path d="M12.5 6c0-1.5 1.2-3 3.5-3s3.5 1.5 3.5 3" stroke="#de00b9" stroke-width="1.4" stroke-linecap="round" fill="none"/>',
+    '<svg class="dyce-toggle-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">',
+    '  <path d="M10 16c0-3.31 2.69-6 6-6h4c3.31 0 6 2.69 6 6v3c0 3.31-2.69 6-6 6h-1.5l-3 3v-3H14c-2.21 0-4-1.79-4-4v-5z" fill="#e8e8e8"/>',
+    '  <circle cx="15" cy="18" r="1.5" fill="#555"/>',
+    '  <circle cx="21" cy="18" r="1.5" fill="#555"/>',
+    '  <path d="M14.5 9.5c0 0 1.5-2.5 3.5-2.5s3.5 2.5 3.5 2.5" stroke="#de00b9" stroke-width="1.8" stroke-linecap="round" fill="none"/>',
+    '  <path d="M12.5 7c0 0 2.5-4 5.5-4s5.5 4 5.5 4" stroke="#de00b9" stroke-width="1.8" stroke-linecap="round" fill="none"/>',
+    '  <path d="M16 5.5c0 0 1-1.5 2-1.5s2 1.5 2 1.5" stroke="#de00b9" stroke-width="1.8" stroke-linecap="round" fill="none"/>',
     '</svg>',
     '<span class="dyce-toggle-label">CHAT</span>',
     '<span class="dyce-pulse-ring"></span>'
