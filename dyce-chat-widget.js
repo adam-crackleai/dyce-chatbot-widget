@@ -27,13 +27,13 @@
 
   // ── Styles (injected into Shadow DOM) ──────────────────────────────
   var CSS = [
-    ":host { all: initial; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }",
+    ":host { all: initial; }",
 
     "*, *::before, *::after {",
     "  box-sizing: border-box;",
     "  margin: 0;",
     "  padding: 0;",
-    "  font-family: inherit;",
+    "  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;",
     "  line-height: 1.4;",
     "}",
 
