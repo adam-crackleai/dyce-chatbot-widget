@@ -312,8 +312,11 @@
   // ── URL linkification ──────────────────────────────────────────────
   function linkify(text) {
     return text.replace(
-      /(https?:\/\/[^\s,)]+)/g,
-      '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+      /(https?:\/\/[^\s,)<>]+)/g,
+      function (url) {
+        var clean = url.replace(/[.,;:!?)]+$/, "");
+        return '<a href="' + clean + '" target="_blank" rel="noopener noreferrer">' + clean + '</a>' + url.slice(clean.length);
+      }
     );
   }
 
