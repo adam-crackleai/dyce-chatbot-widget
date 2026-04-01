@@ -4,7 +4,7 @@
   // ── Configuration ──────────────────────────────────────────────────
   var WEBHOOK_URL = "https://adamyoung.app.n8n.cloud/webhook/dyce-chatbot-webhook/chat";
   var LOGO_URL = "https://dyce-energy.co.uk/wp-content/uploads/2024/02/white-pinnk.png";
-  var REQUEST_TIMEOUT = 30000;
+  var REQUEST_TIMEOUT = 60000;
 
   // ── State ──────────────────────────────────────────────────────────
   var isOpen = false;
